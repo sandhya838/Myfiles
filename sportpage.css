@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding:0 ;
+}
+body{
+    /* height: inherit; */
+    width: inherit;
+    /* position: relative; */
+    box-sizing: border-box;
+    
+}
+.firstpage{
+    height: 750px;
+    width: 100%;
+    background-image: url(./Images/cricket2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.col-1{
+    margin-left: 5%;
+}
+.col-2{
+    height: inherit;
+    width: 100%;
+    display: flex;
+}
+.nav-list{
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-item{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left:50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    letter-spacing: 1px;
+}
+a{
+    color: rgb(63, 52, 52);
+    text-decoration: none;
+    color: white;
+   
+}
+a:hover{
+    color: black;
+    text-shadow:1px 1px white ;
+    
+}
+.col-2-1{
+    background-color: white;
+    color: black;
+    height: 36px;
+    width: 85px;
+    margin-right: 100px;
+    font-size: large;
+    /* background-color:white; */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.col-2-1:hover{
+background-color: rgb(207, 200, 200);
+/* text-shadow: 1px 1px black; */
+box-shadow: 1px 1px 1px rgb(240, 228, 228);
+}
+.main{
+    height: 750px;
+    width: 100%;
+
+}
+.col-3-1{
+    height: inherit;
+    width: 50%;
+    /* background-color: lightblue; */
+}
+
+
+
+/* login page */
+
+.loginPage{
+    margin-top: 30px;
+    height: 750px;
+    width: 100%;
+    text-align: center;
+    background-image:url(./Images/cricket1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    letter-spacing: 2px;
+    font-size: 55px;
+    text-shadow:1px 1px white ;
+    
+}
+h1:hover{
+    text-shadow:1px 1px white ;
+}
+.login-content{
+    color: white;
+    text-shadow:1px 1px rgb(121, 115, 115) ;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.form-control{
+    width: 300px;
+    height: 30px;
+    font-size: 17px;
+}
+.submit{
+    height: 50px;
+    width: 200px;
+    font-size: large;
+    letter-spacing: 1px;
+    background-color: green;
+}
+.submit:hover{
+    color: white;
+    text-shadow: 1px 1px rgb(54, 11, 11) ;
+}
+
+
+/* aboutus */
+.info{
+    margin-top: 30px;
+    height: 750px;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* display: flex; */
+}
+.col-4{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rosybrown;
+}
+.col-4-1{
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    margin-left:50px;
+}
+.list-4{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    letter-spacing: 1px;
+}
+.col-5{
+    height: 750px;
+    width: 100%;
+    background-color: tan;
+    
+}
+.col-5> h1{
+    margin-left: 25px;
+
+}
+
+.col-5> pre{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 25px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            box-sizing: border-box;
+        }
+        .nav-content{
+            height: 60px;
+            width: 100%;
+            background-color: rgb(105, 3, 148);
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-1{
+            display: flex;
+            margin-left: 50px;
+            align-items: center;
+        }
+        .col-2{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .list{
+            display: flex;
+            align-items:flex-start;
+            padding-left: 645px;
+        }
+        .list-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        a{
+            display: block;
+            font-size: 16px;
+            /* line-height: 15px; */
+            margin-left: 50px;
+            position: relative;
+            color: rgb(247, 245, 245);
+            background-color: transparent;
+            font-family: "Roboto", sans-serif;
+            text-decoration: none;
+        }
+        a:hover{
+            border-bottom: 2px solid white;
+        }
+        /* a:active{
+            background-color: rgb(143, 85, 143);
+        } */
+    </style>
+</head>
+<body>
+    <nav class="nav-content">
+        <div class="col-1">
+            <img src="./Images/LOGO_0.png" alt="logo" height="55" width="55">
+        </div>
+        <div class="col-2">
+            <ul class="list">
+                <li class="list-item"><a href="home">Home</a></li>
+                <li class="list-item"><a href="activity">My Activity</a></li>
+                <li class="list-item"><a href="chall">Challenges</a></li>
+                <li class="list-item"><a href="status">2020-status</a></li>
+                <li class="list-item"><a href="board">Leader-board</a></li>
+                <li class="list-item"><a href="logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

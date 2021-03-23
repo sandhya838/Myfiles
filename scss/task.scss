@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@mixin content{
+    margin-right: 10px;
+}
+main{
+    height: 700px;
+    width: 100%;
+    position: relative;
+
+    
+    &>.row{
+        height: 20px;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 90px;
+        justify-content: space-between;
+
+        
+        &>.col-1{
+            height: inherit;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: orange;
+            color: black ;
+            padding-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        &>.col-2{
+            @include content;
+            height: inherit;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: orange;
+            color: black ;
+            padding-left: 10px;
+
+        }
+        &>.col-3{
+            @include content;
+            height: inherit;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: orange;
+            color: black ;
+            padding-left: 10px;
+
+        }
+        &>.col-4{
+            @include content;
+            height: inherit;
+            display: flex;
+            width: 25%;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: orange;
+            color: black ;
+            padding-left: 10px;
+
+        }
+    }
+}

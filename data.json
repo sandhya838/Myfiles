@@ -1,0 +1,59 @@
+{
+  "employees": [
+    {
+      "id": "101",
+      "email": "sandy@gmail.com",
+      "salary": "12000"
+    },
+    {
+      "id": "102",
+      "email": "sandesh@gmail.com",
+      "salary": "1500"
+    },
+    {
+      "id": "103",
+      "email": "saurabh@gmail.com",
+      "salary": "1800"
+    },
+    {
+      "id": "104",
+      "email": "kajal@gmail.com",
+      "salary": "1700"
+    },
+    {
+      "id": "105",
+      "email": "akshada@gmail.com",
+      "salary": "2000"
+    },
+    {
+      "id": "106",
+      "email": "apurva@gmail.com",
+      "salary": "2200"
+    },
+    {
+      "id": "107",
+      "email": "kkr@gmail.com",
+      "salary": "20300"
+    },
+    {
+      "id": "108",
+      "email": "SDE@gmail.com",
+      "salary": "32000"
+    },
+    {
+      "id": "109",
+      "email": "suru@gmail.com",
+      "salary": "12000"
+    },
+    {
+      "id": "110",
+      "email": "swapnil@gmail.com",
+      "salary": "3000"
+    },
+    {
+      "id": "111",
+      "email": "tara@gmail.com",
+      "salary": "32000"
+    }
+  ]
+}

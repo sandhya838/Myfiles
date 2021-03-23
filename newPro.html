@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indoathletic-Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        body {
+            box-sizing: border-box;
+            /* background-image: url(./Images/bg101.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:center ; */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .first-nav {
+            height: 30px;
+            width: 100%;
+            background-color: rgb(207, 204, 204);
+            /* background-image: url(images/facebook.png) no-repeat 0 0; */
+        }
+
+
+        .row-1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 1250px;
+            margin-right: 60px;
+
+        }
+
+        .fa{
+            margin-top: 4px;
+            font-size: 20px;
+            color: rgb(12, 10, 10);
+           
+           
+        }
+        .fa-facebook:hover{
+            height: 22px;
+            width: 20px;
+            color: white;
+            background-color: #054677;
+        }
+        .fa-twitter:hover{
+            height: 22px;
+            width: 20px;
+            color: white;
+            background-color: rgb(17, 150, 150);
+        }
+        .fa-google:hover{
+            height: 22px;
+            width: 20px;
+            color: white;
+            background-color: rgba(156, 25, 16, 0.644);
+        }
+        .fa-rss:hover{
+            height: 22px;
+            width: 20px;
+            color: white;
+         background-color:peru;
+        }
+
+        .nav {
+            height: 110px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+
+        }
+
+        .col-1 {
+            margin-left: 25%;
+            height: 100px;
+        }
+
+
+        .col-2 {
+            margin-top: 2%;
+            margin-left: 30px;
+            margin-right: 300px;
+            font-size: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgb(32 123 114);
+            text-shadow: 2px 2px 3px rgb(148, 182, 226);
+        }
+
+        .nav-container {
+            height: 70px;
+            width: inherit;
+            display: flex;
+            border: 1px solid lightslategrey;
+            background-color: lightgray;
+            /* background-image: linear-gradient(to top right, rgba(233, 196, 225, 0.1),rgba(219, 178, 175, 0.918)); */
+
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .fa-search {
+            /* display: flex; */
+            float: left;
+            margin-left: 237px;
+            color: black;
+            background-color: rgb(214, 215, 216);
+        }
+
+        .col-3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 80px;
+        }
+
+        .col-3-1 {
+            /* height: 30px; */
+            font-size: 30px;
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          
+            /* border: 1px solid transparent; */
+
+        }
+
+        .col-3-1:hover {
+            color: rgba(248, 25, 25, 0.897);
+            text-shadow: 1px 2px 1px black;
+            /* border: 1px solid black;
+            transition: .5s; */
+            /* background-color: white; */
+            /* width: 100px; */
+
+        }
+
+        .btn-1 {
+            margin-left: 100px;
+            height: 40px;
+            width: 130px;
+            font-size: x-large;
+            color: black;
+            border-radius: 18px;
+            background-color: rgb(185, 184, 184)
+                /* background: linear-gradient(to top right, rgba(206, 39, 20, 0.959),rgba(226, 176, 172, 0.699)); */
+        }
+
+        .btn-1:hover {
+            background-color: rgb(214, 215, 216);
+            text-shadow: 2px 2px 2px rgb(134, 131, 131);
+
+        }
+
+        .main {
+            position: relative;
+            overflow: hidden;
+            height: 500px;
+            width: 100%;
+            /* background-color: burlywood; */
+        }
+
+        .main-container {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: slides 0.5s infinite;
+            animation-fill-mode: forwards;
+            animation-duration: 16s;
+            animation-delay: 5s;
+        }
+
+        @keyframes slides {
+            0% {
+                left: 0px;
+            }
+
+            25% {
+                left: -1260px;
+            }
+
+            50% {
+                left: -2520px;
+            }
+            75%{
+                left: -3780px
+            }
+            100% {
+                left: -5040px;
+            }
+        }
+
+        .banner {
+            margin-top: 40px;
+            margin-left: 250px;
+        }
+
+        .side-main {
+            height: 1080px;
+            width: 100%;
+        }
+
+        .title {
+            margin-left: 100px;
+            margin-top: 30px;
+            font-size: 50px;
+            letter-spacing: 1px;
+            color: crimson;
+            text-transform: capitalize;
+        }
+        .s-m{
+            height:840px ;
+            width: 80%;
+            margin-left:100px ;
+            background-color: rgb(212, 215, 218);
+            margin-bottom: 20px;
+        }
+
+        .s-m-1 {
+            height: 700px;
+            width: 70%;
+            margin-left: 200px;
+            margin-top: 30px;
+            border-radius: 3px solid black;
+            background-color: lightgray;
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+            flex-wrap: wrap;
+            overflow-y: scroll;
+        }
+
+        .s-m-1-1 {
+            height: 70px;
+            background-color: rgb(93, 120, 145);
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-size: x-large; 
+            margin-left: 16%; 
+           
+        }
+
+        .s-m-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5px;
+        }
+        
+        .table-box{
+        margin:50px auto;
+    }
+    .table-row{
+        display: table;
+        width: 100%;
+        height: 10px;
+        margin: 10px auto;
+        font-family: sans-serif;
+        background: white;
+        padding: 17px 0;
+        color: rgb(15, 15, 15);
+        font-size: 13px;
+        box-shadow: 0 1px 4px 0 rgba(0,0,50,0.3);
+        
+
+    }
+    .table-cell{
+        display:table-cell;
+        width: 10%;
+        text-align: center;
+        padding: 2px 0;
+        border-radius: 1px solid #d6d4d4;
+        vertical-align: middle;
+    
+    }
+    .table-cell p{
+        text-transform: uppercase;
+
+    }
+    .table-head{
+        background-color: #8665f7;
+        box-shadow: none;
+        color: #fff;
+        font-weight: 600;
+
+    }
+    .table-head .table-cell{
+        border-right: none;
+    }
+    .col-3-1{
+        margin-left: 5px;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="first-nav">
+        <div class="row-1">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-google" aria-hidden="true"></i>
+            <i class="fa fa-rss" aria-hidden="true"></i>
+        </div>
+
+    </div>
+    <div class="nav">
+        <img class="col-1" src="./Images/LOGO_0.png" alt="LOGO_0">
+
+        <p class="col-2">indoathletic Society-IAS</p>
+    </div>
+    <div class="nav-container">
+        <ul class="nav-content">
+            <li class="col-3"><a class="col-3-1" href="">home</a></li>
+            <li class="col-3"><a class="col-3-1" href="">about</a></li>
+            <li class="col-3"><a class="col-3-1" href="">media</a></li>
+            <li class="col-3"><a class="col-3-1" href="">event</a></li>
+            <li class="col-3"><a class="col-3-1" href="">Calendar</a></li>
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <button class="btn-1">Join us</button>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="main-container">
+            <img class="banner" src="./Images/athcycling.jpg" height="450" width="1000" alt="banner-1">
+            <img class="banner" src="./Images/athswimming.jpg" height="450" width="1000" alt="banner-1">
+            <img class="banner" src="./Images/athrunning.jpg" height="450" width="1000" alt="banner-1">
+            <img class="banner" src="./Images/athcycling2.webp" height="450" width="1000" alt="banner-1">
+            <img class="banner" src="./Images/tracking2.jpg" height="450" width="1000" alt="banner-1">
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="side-main">
+        <div class="title">Recent posts</div><br>
+   <div class="s-m">
+            <div class="s-m-1-1">
+                <li class="s-m-list">Type</li>
+                <li class="s-m-list">Title</li>
+                <li class="s-m-list">Auther</li>
+                <li class="s-m-list">Replies</li>
+                <li class="s-m-list">Last Post</li>
+            </div>
+
+<div class="s-m-1">
+            
+<div class="table-row ">
+    <div class="table-cell">
+      <p>Blog entry   </p>
+     </div>
+     <div class="table-cell">
+        <p>मी अनुभवलेली IAS फिटनेस वारी २०२०    </p>
+     </div>
+    <div class="table-cell">
+       <p>giricycling</p>
+    </div>
+    <div class="table-cell">
+    <p></p>
+    </div>
+    <div class="table-cell">
+        <p>Wed, 07/08/2020 - 23:30</p>
+    </div>
+ </div>
+
+ <div class="table-row ">
+    <div class="table-cell">
+        <p>Event</p>
+    </div>
+    <div class="table-cell">
+         <p>TJuly 2020 Daily Rides Calendar</p>
+     </div>
+        
+    <div class="table-cell">
+        <p>gaju</p>
+    </div>
+    <div class="table-cell">
+        <p></p>
+    </div>
+    <div class="table-cell">
+         <p>Mon, 07/06/2020 - 12:46</p>
+    </div>
+</div>
+
+<div class="table-row ">
+    <div class="table-cell">
+    <p>Blog entry                                                    
+    </p>
+    </div>
+    <div class="table-cell">
+        <p>IAS ची वारी फिटनेस वारी  </p>
+            
+    </div>
+    <div class="table-cell">
+        <p>शंकर उणेचा</p>
+     </div>
+     <div class="table-cell">
+          <p></p>
+    </div>
+    <div class="table-cell">
+          <p>Fri, 06/19/2020 - 21:04</p>
+     </div>
+ </div>
+
+ <div class="table-row ">
+    <div class="table-cell">
+     <p>Blog entry</p>
+    </div>
+     <div class="table-cell">
+        <p>!! पंढरपुर सायकलवारी !!</p>
+     </div>
+     <div class="table-cell">
+         <p>Vijay Vasve</p>
+      </div>
+    <div class="table-cell">
+        <p></p>
+     </div>
+      <div class="table-cell">
+        <p>Fri, 06/19/2020 - 20:23</p>
+    </div>
+</div>
+
+<div class="table-row ">
+    <div class="table-cell">
+      <p>Blog entry </p>
+ </div>
+ <div class="table-cell">
+    <p>आरोग्याची वारी हीच पंढरीची वारी २०२०</p>
+</div>
+ <div class="table-cell">
+     <p>giricycling</p>
+ </div>
+  <div class="table-cell">
+     <p></p>
+      </div>
+     <div class="table-cell">
+       <p>sun, 06/14/2020 - 16:10</p>
+      </div>
+   </div>
+
+
+   <div class="table-row ">
+    <div class="table-cell">
+      <p>Basic page	</p>
+ </div>
+ <div class="table-cell">
+    <p>Upcoming Event</p>
+</div>
+ <div class="table-cell">
+     <p>AvinashChougule</p>
+ </div>
+  <div class="table-cell">
+     <p></p>
+      </div>
+     <div class="table-cell">
+       <p>Mon, 12/09/2019 - 18:53</p>
+      </div>
+   </div>
+
+   <div class="table-row ">
+    <div class="table-cell">
+      <p>Blog entry	
+    </p>
+ </div>
+ <div class="table-cell">
+    <p>कोल्हापूर ट्रायथलॉन २०१९</p>
+</div>
+ <div class="table-cell">
+     <p>AvinashChougule</p>
+ </div>
+  <div class="table-cell">
+     <p></p>
+      </div>
+     <div class="table-cell">
+       <p>Mon, 12/09/2019 - 18:16</p>
+      </div>
+   </div>
+
+   <div class="table-row ">
+    <div class="table-cell">
+      <p>Article</p>
+ </div>
+ <div class="table-cell">
+    <p>सायकल वारी पुणे-पंढरपूर</p>
+</div>
+ <div class="table-cell">
+     <p>प्रशांत</p>
+ </div>
+  <div class="table-cell">
+     <p></p>
+      </div>
+     <div class="table-cell">
+       <p>Tue, 10/01/2019 - 11:44</p>
+      </div>
+   </div>
+
+
+   <div class="table-row ">
+    <div class="table-cell">
+      <p>Blog entry</p>
+ </div>
+ <div class="table-cell">
+    <p>Appeal for Support to the Flood Affected (Sangli, Kolhapur) - Stage 2 "Support Plan to Flood affected school children"</p>
+</div>
+ <div class="table-cell">
+     <p>gaju</p>
+ </div>
+  <div class="table-cell">
+     <p></p>
+      </div>
+     <div class="table-cell">
+       <p>Tue, 08/20/2019 - 18:25</p>
+      </div>
+   </div>
+
+
+   <div class="table-row ">
+    <div class="table-cell">
+      <p>Blog entry	</p>
+ </div>
+ <div class="table-cell">
+    <p>Donation Drive Account update</p>
+</div>
+ <div class="table-cell">
+     <p>gaju</p>
+ </div>
+  <div class="table-cell">
+     <p></p>
+      </div>
+     <div class="table-cell">
+       <p>Tue, 08/13/2019 - 19:37</p>
+      </div>
+   </div>
+
+
+   <div class="table-row ">
+    <div class="table-cell">
+      <p>Blog entry	</p>
+ </div>
+ <div class="table-cell">
+    <p>Appeal for Support to the Flood Affected (Sangli, Kolhapur) - Phase 1, कोल्हापूर सांगली जिल्ह्यातील पूरग्रस्तांना मदत करणेसाठी आवाहन</p>
+</div>
+ <div class="table-cell">
+     <p>gaju</p>
+ </div>
+  <div class="table-cell">
+     <p></p>
+      </div>
+     <div class="table-cell">
+       <p>Fri, 08/09/2019 - 13:36</p>
+      </div>
+   </div>
+
+
+
+   <div class="table-row ">
+    <div class="table-cell">
+      <p>Event</p>
+ </div>
+ <div class="table-cell">
+    <p>IAS Pune Pandharpur Pune -Devotional Cycle Ride</p>
+</div>
+ <div class="table-cell">
+     <p>ajitpatil</p>
+ </div>
+  <div class="table-cell">
+     <p></p>
+      </div>
+     <div class="table-cell">
+       <p>	Sat, 06/15/2019 - 07:04</p>
+      </div>
+   </div>
+
+
+   <div class="table-row ">
+    <div class="table-cell">
+      <p>Article</p>
+ </div>
+ <div class="table-cell">
+    <p>Rules & Regulations</p>
+</div>
+ <div class="table-cell">
+     <p>admin</p>
+ </div>
+  <div class="table-cell">
+     <p></p>
+      </div>
+     <div class="table-cell">
+       <p>Thu, 07/13/2017 - 00:08</p>
+      </div>
+   </div>
+</div> 
+</div>    
+</body>
+
+</html>

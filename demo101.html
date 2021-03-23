@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            height: 200px;
+            width: 15%;
+            margin-left: 600px;
+            margin-top: 80px;
+            background-color: blanchedalmond;
+            font-size: xx-large;
+        }
+        input{
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 80%;
+        }
+        input[type="button"]{
+            width: 50%;
+            height: 25px;
+            margin-left: 50px;
+        }
+        .table-container{
+            height: 300px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            margin-top: 70px;
+            margin-left: 500px;
+            background-color:lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+ <form action="demo101.html">
+       <input type="text" id="empID" placeholder="Enter Id"/><br>
+       <input type="email" id="empEmail" placeholder="Enter Email"/><br>
+       <input type="number" id="empSal" placeholder="Enter Salary"/><br>
+       <input type="button" id="btn" value="Submit"/><br>
+   </form>
+   </div>
+   <div class="table-container" id="mainId">
+       <table class="tbl-1"><tr>
+               <th>id</th>
+               <th>email</th>
+               <th>salary</th>
+        </tr> 
+       </table>
+   </div>
+</body>
+<script src="./emp1.js"></script>
+</html>
