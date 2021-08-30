@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.card-container{
+    margin-top: 100px;
+    height: auto;
+    width: auto;
+    /* background-color: lightgrey; */
+}
+mat-card-header{
+    color: #ae0414;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 13px;
+}
+mat-card-title{
+    margin-left: 27%;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #3a3a8d;
+    margin-bottom: 20px;
+}
+mat-card{
+    width: 26%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 355px;
+    border: 1px solid black; 
+}
+mat-card-content{
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: wrap;
+    flex-direction: row;
+}
+img {
+    height: 100px;
+    width: 120px;
+}
+mat-card-actions{
+    margin-left:30%;
+}
+span{
+    color: #ae0414;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    color:#ae0414 ;
+    font-size: 15px;
+}
+.side{
+    margin-top: 10px;
+    margin-left: 8px;
+}

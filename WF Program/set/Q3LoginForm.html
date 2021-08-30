@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        .outerContainer{
+            height: auto;
+            width: 40%;
+            background-color: white;
+            margin-top: 90px;
+            margin-left: 400px;
+            box-shadow: 2px 2px 2px 2px white;
+        }
+        .inner-content{
+            margin-left: 100px;
+            width: 100%;
+        }
+        input{
+            width: 40%;
+        }
+        .btn{
+            height: 40px;
+            width: 100px;
+            border-radius: 40px;
+            color: #fcfcfc;
+            font-size: large;
+            background-color: brown;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outerContainer">
+    <div class="inner-content"> 
+        <h1 style="color: rgb(4, 4, 122);">Login Form</h1>
+        <form action="#" onsubmit="check()">
+        <p>Full-Name: </p> 
+         <input type="text" id="name" placeholder="Enter Name"> <br><br>
+        <p>E-Mail :</p>
+         <input type="text" id="email" placeholder="Enter E-mail"> <br><br>
+       <p>Password: </p>
+         <input type="password" id="pwd" placeholder="Enter Password"><br><br>
+         <p>Confirm Password: </p>
+         <input type="password" id="cpwd" placeholder="ReEnter Password"><br> <br>
+         <button style="margin-left: 80px;" type="submit" class="btn" name="">SUBMIT</button>
+        </form> 
+     </div>
+    </div>
+</body>
+<script>
+    function check(){
+        var name=document.getElementById("name").value;
+        var email=document.getElementById("email").value;
+        var pwd=document.getElementById("pwd").value;
+        var confpwd=document.getElementById("cpwd").value;
+
+        if(name==""){
+            alert("Please enter Full Name");
+            return false;
+        }
+        if(email==""){
+            alert("Please enter Email Address");
+            return false;
+        }
+        else{
+            var condition= /[-.\w]+@([\w-]+\.)+[\w-]/  ;     // /[-.\w]+@([\w-]+\.)+[\w-]+/g
+            if(condition.test(email)==false){
+                alert("Please Enter valid data like something@gmail.com");
+                return false;
+            }
+            else{
+            console.log("registration successfuly..!");
+        }
+        }
+        
+    }
+</script>
+</html>

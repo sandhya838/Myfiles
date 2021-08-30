@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI through Design</title>
+    <link rel="stylesheet" href="./module.css">
+</head>
+<body id="htmlBody">
+    <nav id="mainNav">
+        
+    </nav>
+
+    <main id="mainContent">
+        <div class="articleContainer">
+            <div class="container">
+                <div class="class1">
+                    <img src="./Admin/mangoimg.jpg" height="200px" width="300px" alt=""><br>
+                    <h2>Mango Friuts</h2><br>
+                    <p>Online Shopping</p><br>
+                    <p>Mon-Tue:9am-10.30am</p><br>
+                    <button class="update">Update</button>
+                </div>
+                    <div class="class1">
+                        <img src="./Admin/orangeimg.jpg" height="200px" width="300px" alt=""><br>
+                        <h2>Orange Friuts</h2><br>
+                        <p>Online Shopping</p><br>
+                        <p>Mon-Tue:9am-10.30am</p><br>
+                        <button class="update">Update</button>
+                    </div>
+                        <div class="class1">
+                            <img src="./Admin/strawberryimg.jpg" height="200px" width="300px" alt=""><br>
+                            <h2>Strwabrry Friuts</h2><br>
+                            <p>Online Shopping</p><br>
+                            <p>Mon-Tue:9am-10.30am</p><br>
+                            <button class="update">Update</button>
+                        </div>
+                            <div class="class1">
+                                <img src="./Admin/watermelonimg.jpg" height="200px" width="300px" alt=""><br>
+                                <h2>Watermelon Friuts</h2><br>
+                                <p>Online Shopping</p><br>
+                                <p>Mon-Tue:9am-10.30am</p><br>
+                                <button class="update">Update</button>
+                            </div>
+                            </div>
+            </div>
+    </main>
+<!-- ==========  Script link Section=========== -->
+    <script src="./navbarjs code/navbar.js"></script>               <!-- for navbar -->
+    <script src="./HomeMainSec.js"></script>
+    <script src="./Admin/adminPage.js"></script>
+    <script src="./Admin/LoginPage.js"></script>
+    <script src="./Admin/gallaryPage.js"></script>
+    <script src="./Admin/product.js"></script>
+
+
+<!-- ========= Internal Javascript ============== -->
+<script>
+    // ======= Its for Homenavbar=====
+                //yat apan 1 UI module tayar kel mnhje 1 navbar.js file keli n tyat jo navbar la aplyala code havay to 1ka veriable madhe store kela..
+                // n ithe apan 1 function ghetal n tya function madhe fakt to tya file madhala variable access kela n to apan aplya html madhe ,
+                // tyala place specify karun thevali ahe fakt apan id through tya code chya inner body madhe store karat ahe ..
+                // n te funtion apan lagech tithech call krto mnhje page on honar tyach veles te load jhal pahije withn 1sec chya at..
+                // n te function apan settime out chi method use karun use karat ahe ..
+    function showNavBar1( ){
+        document.getElementById("mainNav").innerHTML=navBar;
+    }
+    setTimeout(showNavBar1(),1000); 
+
+
+//=============Its for body or mainContent of homePage================
+    function showMainPage(page){
+        if(!page) {return } 
+
+        else if(page==='home')
+        {
+            document.getElementById('mainNav').innerHTML=navBar;
+            document.getElementById("mainContent").innerHTML=homePage;
+        }
+
+        else if(page==='admin')
+        {
+            document.getElementById('mainNav').innerHTML=adminNavBar;
+            // document.getElementById('mainNav').innerHTML=
+            document.getElementById("mainContent").innerHTML=adminPage;
+        }
+        else if(page==='Product')
+        {
+            document.getElementById("mainContent").innerHTML=Product;
+        }
+        else if(page==='login')
+        {
+            document.getElementById("mainContent").innerHTML=loginPage;
+        }
+        else if(page==='Manage Gallary')
+        {
+            document.getElementById("mainContent").innerHTML=gallaryPage;
+        }
+        
+    }
+
+</script>
+</body>
+</html>

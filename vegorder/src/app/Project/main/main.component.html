@@ -1,0 +1,16 @@
+<h1>Student Details</h1>
+{{students[0].fName}} {{students[0].lName}} 
+{{students[1].fName}} {{students[1].lName}}
+<!-- {{students[1].marks.SocialScience}} -->
+<ul>
+    <li *ngFor="let stud of students">
+        <h2>{{stud.fName}} {{stud.lName}} <button (click)='toggleSubjects($event,$student)'>Toggle </button></h2>
+        <ul *ngIf="!stud.hide">
+            <li *ngFor="let sub of stud.Subjects">
+                {{sub}}
+                <!-- <span [[ngStyle]="sub.marks < 80 ?myStyles : '' "]>{{marks}}</span> -->
+            </li>
+        </ul>
+    </li>
+    
+</ul>

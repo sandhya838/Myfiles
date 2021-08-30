@@ -1,0 +1,26 @@
+<div class="card-container">
+    <mat-card-title>Student ID Card</mat-card-title>
+<mat-card>
+    <mat-card-header>MIT ACSC Alandi(D),Pune</mat-card-header>
+   
+
+    <mat-card-content>
+        <div class="aside">
+             <img mat-card-imgage src="https://previews.123rf.com/images/yupiramos/yupiramos1705/yupiramos170514348/77978801-student-graduated-profile-icon-vector-illustration-graphic-design.jpg" alt="Student Profile">
+             <p style="margin-left: 20px;">{{students[2].year}}</p>
+        </div>
+        <div class="side">
+        <span>Name</span>: {{students[2].fName}} {{students[2].lName}} <br>
+        <span>Class:</span> {{students[2].class}} <br>
+        <span>Roll No:</span>{{students[2].rno}} <br>
+       <span>Age:</span> {{students[2].age}} <br> 
+        <span>Mobile No:</span>{{students[2].mobile}}
+    </div>
+    </mat-card-content>
+   
+</mat-card>
+<mat-card-actions>
+    <button mat-raised-button color="primary">Read More</button> &nbsp;&nbsp;&nbsp;
+    <button mat-raised-button color="accent">Feadback</button>
+</mat-card-actions>
+</div>

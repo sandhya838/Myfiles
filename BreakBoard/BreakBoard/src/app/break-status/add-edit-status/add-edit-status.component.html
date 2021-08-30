@@ -1,0 +1,65 @@
+<button mat-icon-button class="close-button" [mat-dialog-close]="true">
+    <mat-icon class="close-icon" color="warn">X</mat-icon>
+  </button>
+
+<div class="form froup-row">
+
+    <label class="col-sm-2 col-form-label">Location</label>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" [(ngModel)]="Location"
+        placeholder="Enter location">
+    </div>
+
+    <!-- <label class="col-sm-2 col-form-label">Staff</label>
+    <div class="col-sm-5">
+        <select class="form-control" [(ngModel)]="Staff">
+            <option value="" selected>Select Staff</option>
+            <option value="MD Solo">MD Solo</option>
+            <option value="MD-1 Resident,1 CRNA">MD-1 Resident,1 CRNA</option>
+            <option value="MD-1 Resident">MD-1 Resident</option>
+            <option value="MD-2 Residents">MD-2 Residents</option>
+            <option value="MD-1 CRNA">MD-1 CRNA</option>
+            <option value="MD-2 CRNAs">MD-2 CRNAs</option>
+            <option value="MD-3 CRNAs">MD-3 CRNAs</option>
+            <option value="MD-4 CRNAs">MD-4 CRNAs</option>
+        </select>
+    </div> -->
+
+    <label class="col-sm-4 col-form-label">AM Break Status</label>
+    <div class="col-sm-5">
+        <select class="form-control" [(ngModel)]="AM_Break_Status">
+            <option value="" selected>Select AM Break Status</option>
+                <option value="Taken">Taken</option>
+                <option value="Missed">Missed</option>
+                <option value="Ready">Ready</option>
+        </select>
+    </div>
+
+    <label class="col-sm-4 col-form-label">Lunch Break Status</label>
+    <div class="col-sm-5">
+        <select class="form-control" [(ngModel)]="Lunch_Break_Status">
+            <option value="" selected>Select Lunch Break Status</option>
+                <option value="Taken">Taken</option>
+                <option value="Missed">Missed</option>
+                <option value="Ready">Ready</option>
+        </select>
+    </div>
+
+    <label class="col-sm-4 col-form-label">PM Break Status</label>
+    <div class="col-sm-5">
+        <select class="form-control" [(ngModel)]="PM_Break_Status">
+            <option value="" selected>Select PM Break Status</option>
+                <option value="Taken">Taken</option>
+                <option value="Missed">Missed</option>
+                <option value="Ready">Ready</option>
+        </select>
+    </div>
+</div>
+<br>
+<mat-dialog-actions>
+<button class="mat-raised-button" (click)="addBreakStatus()" 
+           >
+    Add
+</button>
+</mat-dialog-actions>
+

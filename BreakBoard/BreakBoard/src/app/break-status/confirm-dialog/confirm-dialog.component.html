@@ -1,0 +1,28 @@
+<button mat-icon-button class="close-button" [mat-dialog-close]="true">
+  <mat-icon class="close-icon" color="warn">X</mat-icon>
+</button>
+
+<div class="container"
+style="width:100%; padding: 1px !important;margin: 1px!important;max-width:100%">
+
+<table>
+    <tr>
+      <td style="width: 10%">
+        
+        <h5>Do you want to delete?</h5>
+        <br>
+        
+        <mat-dialog-actions>
+          <button class="mat-raised-button" (click)="onConfirm()">
+            Yes
+          </button>
+          &nbsp; &nbsp;
+          <button class="mat-raised-button" (click)="onDismiss()">
+            No
+          </button>
+        </mat-dialog-actions>
+
+      </td>
+    </tr>
+  </table>
+</div>

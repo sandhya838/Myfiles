@@ -1,0 +1,13 @@
+/* .gap{
+    flex: 1 1 auto;
+}
+input{
+    border-radius: 15px;
+    width: 70%;
+}
+@media screen and (min-width: 360px) {
+    input{
+        width: 50%;
+        float: right;
+    }  
+} */

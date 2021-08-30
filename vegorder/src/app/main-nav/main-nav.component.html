@@ -1,0 +1,40 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="..//..//assets/IAS-Logo.png" alt="logo" height="50" width="50"></mat-toolbar>
+    <mat-nav-list>
+      <div class="adminProfile">
+      <img class="circle-img" src="..//../assets/Myprofile.jpg" alt="myprofile">
+      <strong id="admin-name">Sandesh_Erande</strong>
+    </div>
+      <a mat-list-item href="">Dashboard</a>
+      <a mat-list-item href="#">Home</a>
+      <a mat-list-item href="#">Event</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span class="heading">Indo-Athletic Society</span>
+    </mat-toolbar>
+    <ng-content> </ng-content>
+    <!-- Add Content Here -->
+    <div class="body-content">
+      <div class="card-container">
+        <app-cards></app-cards>
+      </div>
+      <div class="table-container">
+        <app-table></app-table>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,141 @@
+<!-- Button trigger modal -->
+<div style="margin-top:5em">
+<button type="button" class="btn btn-primary float-left m-2"
+ (click)="addClick()"
+data-backdrop="static" data-keyboard="false">
+    Add Location
+  </button>
+</div>
+  
+
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="width: 140px !important;">
+           
+              <div class="d-flex flex-row">
+                <input [(ngModel)]="LocationFilter" class="form-control"
+                (keyup)="FilterFn()" placeholder="Location" style="width:80px;">
+              </div>
+              Location</th>
+              
+            <!-- <th>Staff</th> -->
+            <th style="width: 180px !important;">
+              <!-- <div class="d-flex flex-row">
+                <input [(ngModel)]="AMBreakStatusFilter" class="form-control"
+                (keyup)="FilterFn()" placeholder="Filter AM Breaks" style="width:160px;">
+              </div> -->
+              <ng-multiselect-dropdown style="white-space:nowrap;" [placeholder]="'AM Breaks'"
+                                     [settings]="dropdownSettings"
+                                     [data]="amstatus"
+                                     [(ngModel)]="selectedAMStatus"
+                                     (onSelect)="onsubmit()"
+                                     (onDeSelect)="onsubmit()"
+                                     (onSelectAll)="onSelectAll($event)">
+            </ng-multiselect-dropdown>AM Break Status
+          </th>
+              
+            <th style="width: 180px !important;">
+              <!-- <div class="d-flex flex-row">
+                <input [(ngModel)]="LunchBreakStatusFilter" class="form-control"
+                (keyup)="FilterFn()" placeholder="Filter Lunch Breaks" style="width:160px;">
+              </div> -->
+              <ng-multiselect-dropdown style="white-space:nowrap;width:80px;" [placeholder]="'Lunch Breaks'"
+                                     [settings]="dropdownSettings"
+                                     [data]="amstatus"
+                                     [(ngModel)]="selectedLunchStatus"
+                                     (onSelect)="onsubmit()"
+                                     (onDeSelect)="onsubmit()"
+                                     (onSelectAll)="onSelectAll($event)">
+            </ng-multiselect-dropdown>
+              Lunch Break Status</th> 
+            <th style="width: 180px !important;">
+              <!-- <div class="d-flex flex-row">
+                <input [(ngModel)]="PMBreakStatusFilter" class="form-control"
+                (keyup)="FilterFn()" placeholder="Filter PM Breaks" style="width:160px;">
+              </div> -->
+              <ng-multiselect-dropdown style="white-space:nowrap;width:80px;" [placeholder]="'PM Breaks'"
+                                     [settings]="dropdownSettings"
+                                     [data]="amstatus"
+                                     [(ngModel)]="selectedPMStatus"
+                                     (onSelect)="onsubmit()"
+                                     (onDeSelect)="onsubmit()"
+                                     (onSelectAll)="onSelectAll($event)">
+            </ng-multiselect-dropdown>
+              PM Break Status</th>
+              <th>Status</th>
+              <th>OutRoom</th>  
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of BreakStatusList">
+            <td>{{dataItem.Location}}</td>
+            <!-- <td class="columntext">
+              <select style="border:0!important; background-color:transparent; padding:0!important; margin:0!important; width:65%" matNativeControl
+                      required [(ngModel)]="dataItem.Staff" (change)="editClick(dataItem)">
+                <option value="MD Solo">MD Solo</option>
+                <option value="MD-1 CRNA">MD-1 CRNA</option>
+                <option value="MD-2 CRNAs">MD-2 CRNAs</option>
+                <option value="MD-3 CRNAs">MD-3 CRNAs</option>
+                <option value="MD-4 CRNAs">MD-4 CRNAs</option>
+              </select>
+            </td> -->
+            <td class="columntext">
+              <select style="border:0!important; background-color:transparent; padding:0!important; margin:0!important; width:35%; border-radius: 5px;font-size: large;" matNativeControl
+                      required [(ngModel)]="dataItem.AM_Break_Status" (change)="editClick(dataItem)"
+                      [ngStyle]="dataItem.AM_Break_Status=='Missed'?{'background-color':'rgb(255,230,230)'} :
+                                 dataItem.AM_Break_Status=='Ready'?{'background-color': 'rgb(255,255,204)'}:
+                                 dataItem.AM_Break_Status=='Taken'?{'background-color': 'rgb(214,245,214)'}:
+                                 {'background-color': 'transparent'}">
+                <option value="Taken">Taken</option>
+                <option value="Missed">Missed</option>
+                <option value="Ready">Ready</option>
+              </select>
+            </td>
+            <td class="columntext">
+              <select style="border:0!important; background-color:transparent; padding:0!important; margin:0!important; width:35%; border-radius: 5px;font-size: large;" matNativeControl
+                      required [(ngModel)]="dataItem.Lunch_Break_Status" (change)="editClick(dataItem)"
+                      [ngStyle]="dataItem.Lunch_Break_Status=='Missed'?{'background-color':'rgb(255,230,230)'} :
+                                 dataItem.Lunch_Break_Status=='Ready'?{'background-color': 'rgb(255,255,204)'}:
+                                 dataItem.Lunch_Break_Status=='Taken'?{'background-color': 'rgb(214,245,214)'}:
+                                 {'background-color': 'transparent'}">
+                <option value="Taken">Taken</option>
+                <option value="Missed">Missed</option>
+                <option value="Ready">Ready</option>
+              </select>
+            </td>
+            <td class="columntext">
+              <select style="border:0!important; background-color:transparent; padding:0!important; margin:0!important; width:35%; border-radius: 5px;font-size: large;" matNativeControl
+                      required [(ngModel)]="dataItem.PM_Break_Status" (change)="editClick(dataItem)"
+                      [ngStyle]="dataItem.PM_Break_Status=='Missed'?{'background-color':'rgb(255,230,230)'} :
+                                 dataItem.PM_Break_Status=='Ready'?{'background-color': 'rgb(255,255,204)'}:
+                                 dataItem.PM_Break_Status=='Taken'?{'background-color': 'rgb(214,245,214)'}:
+                                 {'background-color': 'transparent'}">
+                <option value="Taken">Taken</option>
+                <option value="Missed">Missed</option>
+                <option value="Ready">Ready</option>
+              </select>
+            </td>
+            <td>{{dataItem.Status}}</td>
+            <td>{{dataItem.OutRoom}}</td>
+            <td>
+                <!-- <button type="button" class="btn btn-light mr-1"
+               (click)="editClick(dataItem)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                  </svg>
+                </button> -->
+                <button type="button" class="btn btn-light mr-1"
+                (click)="deleteClick(dataItem)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
+                      </svg>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Playfair Display', serif;
+            box-sizing: border-box; 
+             }
+
+             /* ####### Home Page ###### */
+             .Home-Page{
+                 height: 700px;
+                 /* width: 100%; */
+              }
+             .nav{
+                 height: 80px;
+                 width: 100%;
+                 background-color: white;
+                 box-shadow: 2px 2px 5px #9e9e9e;
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 flex-wrap: wrap;
+                 flex-direction: column;
+             }
+             .logo-container{
+                display: flex;
+                align-items: center;
+                width: 20%;
+             }
+             .logo{
+                 padding-left: 70px;
+                 height: 75px;
+                 width: 75px;
+             }
+             .nav-container{
+                 width: 80%;
+                 padding-top: 20px;
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-around;
+             }
+             .nav-list{
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-around;
+                 margin-left: 40px;
+             }
+             .row-1{
+                display: flex;
+                align-items: center;
+                color: rgb(59, 88, 170);
+                text-decoration: none;
+                text-transform:capitalize;
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+                margin-top: 5px;
+                
+             }
+             .row-1:hover{
+                color: rgb(4, 115, 158);
+                border-bottom: 1px solid rgb(59, 88, 170);
+                
+             } 
+             span{
+                font-family: 'Times New Roman', Times, serif;
+             }
+             .fa-search{
+                display: flex;
+                align-items: center;
+                font-family: 'Times New Roman', Times, serif;
+                margin-top: 3px;
+                padding-right:200px ;
+                color: rgb(59, 88, 170);
+                font-size: 20px;
+            } 
+            .main{
+                height: inherit;
+                width: 100%;  
+            }
+            h2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(13, 56, 92);
+                /* padding-left: 35px; */
+                font-size: 35px;
+            }
+            .footer{
+        background: #000;
+        color: #8a8a8a;
+        font-size: 14px;
+        padding: 50px 0 20px;
+    }
+    .main-container{
+        height: inherit;
+        width: 100%;
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+    }
+    
+
+
+
+
+
+
+
+    /* #### footer #### */
+    /* footer{
+        bottom: 0;
+        position: fixed;
+    } */
+    .footer p{
+        color: #8a8a8a;
+    }
+    .footer h3{
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+        min-width: 250px;
+        margin-bottom: 20px;
+    }
+    .footer-col-1{
+            flex-basis: 30%;
+    }
+    .footer-col-2{
+        flex:1;
+        text-align: center;
+    }
+    .footer-col-2 img {
+        width: 180px;
+        margin-bottom: 20px;
+    }
+    .footer-col-3, .footer-col-4{
+        flex-basis: 12%;
+        text-align: center;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .app-logo{
+        margin-top: 20px;
+    }
+    .app-logo img{
+        width: 140px;
+    
+    }
+    .footer hr{
+        border: none;
+        background: #b5b5b5;
+        height: 1px;
+        margin: 20px 0;
+    }
+    .copyright{
+        text-align: center;
+    }
+    
+    
+            .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .container{
+        max-width: 1300px;
+        margin: auto;
+        padding-left:25px;
+        padding-right: 25px;
+        margin-top: -26px;
+    }
+    .logo{
+        margin-left: 30px;
+    }
+
+    /* # Contact Page #*/
+    .contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:linear-gradient(90deg, rgba(56, 4, 4, 0.65),rgba(88, 3, 3, 0.65),rgba(65, 4, 1, 0.38),rgba(68, 7, 7, 0)),url(./Images/athback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .contact .content{
+    max-width: 800px;
+    text-align: center;
+  }
+  .contact .content h2{
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+
+  }
+  .contact .content p{
+    font-size: 22px;
+    text-transform:uppercase;
+    color: black;
+    font-family: 'Playfair Display', serif;
+  }
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+  }
+  .container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+  .container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20PX;
+    font-size: 16PX;
+    color: #FFF;
+    flex-direction: column;
+    font-weight: 300;  
+  }
+  .container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+  }
+  .contactForm{
+    width: 40%;
+    padding: 40px;
+    background: white;
+  }
+  .contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500; 
+  }
+  .contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contactForm .inputBox input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+  .contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding:5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition:0.5s;
+    color: #666;
+  }
+  .contactForm .inputBox input:focus ~ span,
+  .contactForm .inputBox input:valid ~ span,
+  .contactForm .inputBox textarea:focus ~ span,
+  .contactForm .inputBox textarea:valid ~ span
+  {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+  }
+  .contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+
+    /* ### Media Query #### */
+    @media only screen and (max-width:1280px) {
+        body{
+            width: 100%;
+        }
+        .Home-Page{
+            width: 100%;
+        }
+        .nav{
+            height: 50px;
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 100%;
+        }
+        .logo-container{
+            width: 15%;
+            margin-top: 6px;
+        }
+        .logo{
+            height: 39px;
+            width: 39px;
+            padding-left: 66px;
+        }
+        .nav-container{
+                 width: 85%;
+                 padding-top: 10px;
+        }
+        .nav-list{
+            margin-left: 10px;
+        }
+        .row-1{
+            font-size: 18px;
+            margin-top: 3px;
+        }
+        .fa-search{
+            padding-right:100px ;
+        }
+    }
+    @media only screen and (max-width:900px) {
+        .logo-container{
+            width: 12%;
+            margin-top: 10px;
+        }
+        .logo{
+            padding-left: 20px;
+        }
+        .nav-container{
+                 width: 88%;
+                 padding-top: 10px;
+        }
+        .fa-search{
+            padding-right:70px ;
+        }
+    }
+    @media(max-width: 991px){
+    .contact{
+      padding: 50px;
+    }
+    .container{
+      flex-direction: column;
+    }
+    .container .contactInfo{
+      margin-bottom: 40px;
+    }
+    .container .contactInfo .contactForm{
+      width: 100%;
+    }
+  }
+    @media only screen and (max-width:700px) {
+        .logo{
+            height: 30px;
+            width: 30px;
+            padding-left: 6px;
+        }
+        @media only screen and (min-width:500px) {
+            .logo-container{
+                width: 13%;
+            }
+            .logo{
+                padding-left: 2px; 
+                padding-left: 0px;
+                margin-top: 3px;
+            }
+            .nav-container{
+                 width: 87%;
+            }
+            .fa-search{
+            padding-right:20px ;
+        }
+        }
+
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="Home-Page" id="home">
+        <div class="nav">
+            <div class="logo-container">
+                <img class="logo" src="./Images/LOGO_0.png" alt="IAS_logo">
+            </div>
+            <ul class="nav-container">
+                <li class="nav-list"><a class="row-1" href="#home">home</a></li>
+                <li class="nav-list"><a class="row-1" href="#about">about</a></li>
+                <li class="nav-list"><a class="row-1" href="#event">event</a></li>
+                <li class="nav-list"><a class="row-1" href="#gallary">gallary</a></li>
+                <li class="nav-list"><a class="row-1" href="#Contact">contact</a></li>
+                <li class="nav-list"><a class="row-1" href="#login">login</a></li>
+                <li class="nav-list"><a class="row-1" href="#search"><i class="fa fa-search" aria-hidden="true">Search</i></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2>Indo-Athletic Society</h2><br>
+            
+
+        </div>
+        </div>
+                     
+ <!-- ***********Footer******** -->
+ <footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="./Images/appstore.png" >
+                    <!-- <img src="" > -->
+                </div>
+            </div>
+            
+    <div class="footer-col-3">
+        <img src="./Images/strava.png" width="100px " height="90px">
+        <p>Record an activity and it goes to your Strava feed, where your friends and followers can share their own races and workouts</p>
+    </div>
+    <div class="footer-col-3">
+        <h3>Useful Links</h3>
+        <ul>
+    
+               <li>Blog Post</li>
+               <li>Join Affiliate</li>
+        </ul>
+    </div>
+    <div class="footer-col-4">
+        <h3>Follow us</h3>
+        <ul>
+               <li>Facebook</li>
+               <li>Twitter</li>
+               <li>Instagram</li>
+        
+        </ul>
+    </div>
+</div>
+<hr>
+<p class="copyright">Copyright 2021- Easy Webpage</p>
+</div>
+</div>
+</footer>
+
+    <!-- ###### Contact Page ####### -->
+    <section class="contact" id="Contact">
+        <div class="content">
+          <h2>Contact Us</h2>
+          <p>Welcome to Indo Athletic Society</p>
+        </div>
+        <div class="container">
+          <div class="contactInfo">
+            <div class="box">
+              <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>Sector Number 28, Pune, Maharashtra 411044. 
+                    
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+              <div class="text">
+                <h3>Phone</h3>
+                <p>507-475-6094</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>indoAthletics@temporary-mail.com</p>
+              </div>
+            </div>
+           </div>
+           <div class="contactForm">
+            <form>
+              <h2>Send Message</h2>  
+              <div class="inputBox"> 
+                <input type="text" name="" required="required">
+                  <span>Full Name</span>
+              </div> 
+              <div class="inputBox"> 
+                <input type="text" name="" required="required">
+                  <span>Email</span>
+              </div> 
+              <div class="inputBox"> 
+                <input type="text" name="" required="required">
+                  <span>Type Your Message...</span>
+              </div> 
+              <div class="inputBox"> 
+                <input type="submit" name="" value="Send">
+              </div>     
+            </form>
+           </div>
+        </div>
+     </section>
+  
+</body>
+</html>
+
+
+<!-- <div class="home-icon">
+            <div class="icon">
+                   <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                    <i class="fa fa-rss" aria-hidden="true"></i>
+            </div>
+         </div> -->

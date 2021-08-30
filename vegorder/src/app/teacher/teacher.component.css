@@ -1,0 +1,33 @@
+h3{
+    width: 100%;
+    height: 20px;
+}
+.card-container{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: 230px;
+    top: 0;
+
+    z-index: 1;
+}
+span{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    margin-left: 15px;
+    margin-top: 25px;
+    background-color: white;
+    box-shadow: 1px 1px 1px lightgray;
+}
+.card:hover{
+    box-shadow: 1px 2px 2px 1px black;
+}
+h3{
+    margin-left: 8px;
+}

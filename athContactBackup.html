@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact to IAS</title>
+    <link rel="shortcut icon" href="http://indoathleticsociety.com/sites/default/files/LOGO_0.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+        body{
+            box-sizing: border-box;
+        }
+        .main{
+            height: 752px;
+            width: 100%;
+            /* background-color: white; */
+            background-image: linear-gradient(to left bottom, rgba(26, 22, 22, 0.65),rgba(22, 20, 20, 0.65),rgba(134, 126, 125, 0.38),rgba(36, 11, 11, 0)), url(./Images/conbg101.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display:flex;
+        }
+        .Contact{
+            height: 550px;
+            width: 30%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 80px 40px;
+            box-sizing: border-box;
+            background-color: rgb(223, 219, 219);
+            background:rgba(0,0,0,0.5);
+        }
+        /* .Contact:hover{
+            box-shadow: 1px 1px 3px 3px lightgray;
+        } */
+        h2{
+            margin: 0;
+            padding: 0 0 20px;
+            color: #1e90ff;
+            text-align: center;
+        }
+        .inner-content p{
+            padding: 0;
+            margin:0 ;
+            font-size: 20px;
+            
+            color: white;
+        }
+        .inner-content input{
+            width: 100%;
+            margin-bottom: 20px; 
+        }
+        .inner-content input[type="text"],.inner-content input[type="password"],.inner-content input[type="text"]{
+            border: none;
+            border-bottom: 1px solid black;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .inner-content input[type="submit"]{
+            border: none;
+            outline: none;
+            height: 40px;
+            color: white;
+            font-size: 16px;
+            background: rgb(253, 65, 140);
+            cursor: pointer;
+            border-radius: 20px;
+            width: 50%;
+            margin-left: 100px;
+        }
+        .inner-content input[type="submit"]:hover{
+            background:#06b1c6 ;
+            color: white;
+        }
+        a{
+            color: white;
+            font-size: 20px;
+            
+        }
+        ::placeholder{
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .user{
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            position: absolute;
+            top: calc(-100px/2);
+            margin-left: 30%;
+            border-radius: 50%;
+        }
+        /* .fa{ margin-left: 50px;
+            background-color: white;
+            color: rgb(6, 6, 95);
+        }
+        .fa-google{
+            color: red;
+            background-color: black;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="main"> 
+    <div class="Contact">
+        <img src="./Images/user.png" class="user">
+        <div class="box-1">
+            <h2>Contact Us</h2>
+        </div>
+            <div class="inner-content">   
+           <p>Full-Name: </p> 
+            <input type="text" placeholder="Enter Name"> <br><br>
+           <p>E-Mail :</p>
+            <input type="text" placeholder="Enter Password"> <br><br>
+          <p> Message: </p>
+            <input type="text" placeholder="Write Your Message Here"><br>
+            <input type="submit" name="" value="Send">
+        </div>
+        </div>
+    </div>
+</body>
+</html>

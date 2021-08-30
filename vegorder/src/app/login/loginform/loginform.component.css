@@ -1,0 +1,47 @@
+.container{
+    margin-top: 70px;
+    padding-bottom: 40px;
+}
+#cardp4{
+    background-color: #f8f9fa;
+}
+/* input.ng-touched.ng-invalid{
+    border: 1px solid red;
+} */
+
+
+
+
+
+
+/* .login-main{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    mat-card-title{
+        color:#3f51b5;
+    }
+    mat-card{
+    width: 30%;
+    height: auto;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+    }
+    mat-card-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    input{
+        border: none;
+        border-bottom: 2px solid black;
+    }
+    .form-check-input{
+        background-color: lightgrey;
+        color: #3f51b5;
+    }
+    input[type=checkbox]{
+        color: #3f51b5;
+    } */

@@ -6,18 +6,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
         body{
-            background-color: burlywood;
-            font-family: sans-serif;
+            box-sizing: border-box;
         }
-        @media screen and (max-width: 600px) {
-            body {
-                    background-color: lightblue;
-                 }
+        .header{
+            height: 20%;
+            width: 100%;
+            background-color:lightgrey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+        .header h1{
+            font-size: 40px;
+        }
+         .header span{
+             color: red;
+         }
+         .navBar{
+             height: 30px;
+             width: 100%;
+             display: flex;
+             justify-content: space-around;
+             background-color: gray;
+         }
+         .nav-list{
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+             font-size: larger;
+            text-transform: uppercase;
+            /* margin-left: 150px; */
+         }
+         li{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            padding: 0px 40px;
+         }
+         li:hover{
+             color: black;
+             background-color: rgb(224, 218, 218);
+         }
+         .main{
+             height: 600px;
+             width: 100%;
+             display: flex;
+             flex-wrap: wrap;
+             
+         }
+         aside{
+             height: 300px;
+             width: 50%;
+             /* padding: 10px; */
+             display: flex;
+         }
+         img{
+             padding: 20px;
+         }
+         section{
+             height: 300px;
+             width: 50%;
+             /* padding: 10px; */
+             display: flex;
+             font-size: 30px;
+             font-family: Georgia, 'Times New Roman', Times, serif;
+         }
+         p{
+            padding: 22px;
+         }
+         @media only screen and (max-width:1240px) {
+            .main{
+                 display:block;
+             } 
+             aside{
+                 width: 100%;
+                 height: 450px;
+             }
+             img{
+                 margin-left: 200px;
+                 height: 450px;
+                 width: 550px;
+                 padding: 16px;
+             }
+            section{
+                 width: 100%;
+                 align-items: center;
+             }
+         }
+         @media only screen and (max-width:480px){
+            .nav-list{
+                width: 100%;
+                font-size: 15px;
+                justify-content: space-between;
+             }
+             li{
+                 padding: 0;
+             }
+             li:last-child{
+                 margin-right: 5px;
+             }
+             li:first-child{
+                 margin-left: 5px;
+             }
+             .main{
+                 display:block;
+             }
+             aside{
+                 width: 100%;
+                 height: 450px;
+             }
+             section{
+                 width: 100%;
+                 height: 400px;
+             }
+             img{
+                 height: 400px;
+                 width: 400px;
+                 margin-left: 0px;
+                 /* padding: 16px; */
+             }
+             p{
+                 font-size: xx-large;
+                 /* padding: 5px; */
+             }
+         }
+
     </style>
 </head>
 <body>
-    <p>media Query..!</p>
+    <div class="header">
+        <h1>Royal Enfield..!</h1>
+        <span>Welcome to Royal Enfield</span>
+    </div>
+    <nav class="navBar">
+        <ul class="nav-list">
+            <li class="list">Home</li>
+            <li class="list">Gallery</li>
+            <li class="list">About</li>
+            <li class="list">Login</li>
+        </ul>
+    </nav>
+    <div class="main">
+        <aside>
+            <img src="./Images/bullet-350-landing6.jpg" alt="" height="450" width="550">
+        </aside>
+        <section>
+            <p>Royal Enfield is an Indian multinational motorcycle manufacturing company with the tag of "the oldest global motorcycle brand in continuous production" manufactured in factories in Chennai in India.</p>
+        </section>
+    </div>
 </body>
 </html>

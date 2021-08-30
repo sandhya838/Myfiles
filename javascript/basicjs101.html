@@ -7,19 +7,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bascis of js</title>
 
-<!-- <style>
-  * {
+<style>
+/* For DOM Object Learning */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  box-sizing: border-box;
+}
+.header{
+  height: 752px;
+  width: 100%;
+  background-image: linear-gradient(170deg, rgba(292, 78, 9, 0.85),rgb(255, 255, 255,0.35),rgba(59, 127, 230, 0.1),rgba(9, 209, 69, 0.83));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+.header_logo-box{
+height: inherit;
+width: inherit;
+display: flex;
+justify-content: space-around;
+align-items: top;
+}
+.header_text-box{
+  height: 375px;
+width: inherit;
+display: flex;
+justify-content: space-between;
+}
+img{
+  margin-top: 200px;
+}
+h1{
+  margin-left: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.heading-primary--main{
+  margin-left: 165px;
+        font-size:65px;
+        text-transform: uppercase;
+        color: rgb(56, 56, 240);
+}
+.heading-primary--sub{
+         font-size: larger;
+         border-bottom: 1px solid black;
+}
+.btn{
+  width: 30%;
+    height: 82%;
+    border-color: black;
+   font-size: large;
+    margin-left: 150px;
+    margin-top: 30px;
+    background: #6dcdda;
+}
+.btn:hover{
+  border-color: blue;
+}
+
+   /* ########## For Country Data########## */
+  /* * {
         margin: 0;
         padding: 0;
         box-sizing: inherit;
-      }
-      
-      html {
+      } */
+     
+      /* html {
         font-size: 62.5%;
         box-sizing: border-box;
-      }
+      } */
       
-      body {
+      /* body {
         font-family: system-ui;
         color: #555;
         background-color: #f7f7f7;
@@ -38,14 +101,14 @@
       
       .countries {
         /* margin-bottom: 8rem; */
-        display: flex;
+        /* display: flex;
       
         font-size: 2rem;
         opacity: 0;
         transition: opacity 1s;
-      }
+      } */
       
-      .country {
+      /* .country {
         background-color: #fff;
         box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
         font-size: 1.8rem;
@@ -53,9 +116,9 @@
         border-radius: 0.7rem;
         margin: 0 3rem;
         /* overflow: hidden; */
-      }
-      
-      .neighbour::before {
+      /* }
+       */
+      /* .neighbour::before {
         content: 'Neighbour country';
         width: 100%;
         position: absolute;
@@ -133,41 +196,62 @@
         margin: 2rem;
         border: 3rem solid white;
         box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
-      } -->
-  
-<!-- </style> -->
+      }  */
+   
+</style>
 </head>
 <body>
-    <!-- <div class="paras">
+   <header class="header">
+     <div class="header_logo-box" id="logo">                                                               <!--  style="background-color: brown; -->
+        <img src="./India-flag.png" alt="Logo" designer="company" height="150" width="220" class="header_logo">
+    </div>
+
+    <div class="header_text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary--main">India</span>
+        <span class="heading-primary--sub">Welcome to Beautiful Country</span>
+        <span class="btnClass"><button class="btnClass btn">Read More</button></span>
+      </h1>
+    </div>
+   </header> 
+     <div class="paras">
         <p id="fpara">Take a wild guess as to what will you say to describe a paragraph? From whatever you may
             know so far, many students describe paragraphs as what consists the story, or a set of sentences that are
             grouped together to form a paragraph or a set of sentences that cover half a page of your story, and so on.
-     </p> -->
-        <!-- <button class="btn-1" type="button" onclick="document.getElementById('fpara').style.fontSize='35px'">submit</button>
-        <div id="method">
-        name:<input type="text" name="name"><br>
-        address: <input type="text" name="address"><br>
+        </p> 
      
-    </div> -->
-        <!-- <p >1)Although these ideas may look true in many instances, they don’t really define what the idea behind a
-            paragraph is. This is one of those subtle things in English writing that never really gets explained on
-            priority making it one of those commonly used things that are barely understood. Which is why this read is
-            going to be great.</p>
-            <p >2)Although these ideas may look true in many instances, they don’t really define what the idea behind a
+               <button class="btn-1" type="button" onclick="document.getElementById('fpara').style.fontSize='35px'">submit</button>
+                  <div id="method">
+                        name:<input type="text" name="name"><br>
+                        address: <input type="text" name="address"><br> 
+                  </div>
+     </div>
+         <div class="paras">
+            <p class="paras"> 1)Although these ideas may look true in many instances, they don’t really define what the idea behind a
+                              paragraph is. This is one of those subtle things in English writing that never really gets explained on
+                              priority making it one of those commonly used things that are barely understood. Which is why this read is
+                              going to be great.
+            </p>
+            <p class="paras">2)Although these ideas may look true in many instances, they don’t really define what the idea behind a
+                              paragraph is. This is one of those subtle things in English writing that never really gets explained on
+                              priority making it one of those commonly used things that are barely understood. Which is why this read is
+                              going to be great.
+            </p>
+        </div>
+
+        <div id="index">
+            <p id="fpara" class="elt-delete">Although these ideas may look true in many instances, they don’t really define what the idea behind a
                 paragraph is. This is one of those subtle things in English writing that never really gets explained on
                 priority making it one of those commonly used things that are barely understood. Which is why this read is
-                going to be great.</p>
-            </div>
-        <div id="index">
-        <p>Although these ideas may look true in many instances, they don’t really define what the idea behind a
-            paragraph is. This is one of those subtle things in English writing that never really gets explained on
-            priority making it one of those commonly used things that are barely understood. Which is why this read is
-            going to be great.</p>
-    </div>
-    <p id="demo"></p> -->
-    <div class="countries">
-       
-    </div>
+                going to be great.
+            </p>
+        </div> 
+
+          <p id="demo"></p>
+          <div class="countries">
+
+            
+          </div> 
 </body>
 <script src="basic101.js"></script>
 

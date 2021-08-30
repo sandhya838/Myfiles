@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FarmaFood</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styleRef.css">
+    <!--=========================Font Awasome Plugin==========================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <script src='./admin/adminRef.js' ></script>
+    <script src='./public/navbarRef.js'></script>
+    <script src='./homeRef.js'></script>
+    
+    <!-- <script src="./Js/main.js"></script> -->
+</head>
+
+<body  id="htmlBody">
+    <nav id="mainNav"></nav>
+  
+    <!-- <div class="shopping-cart">
+            <i class="fa fa-shopping-cart"></i>
+            </div>
+    -->
+    </div>
+    <main id='mainContent'>
+   demo contents
+   
+    </main>
+    
+    
+    <script>
+           function showNavBar(){
+              document.getElementById('mainNav').innerHTML =navbar;
+            }
+            setTimeout( showNavBar(),1000);
+            
+            function showPage(page){
+                if(!page) {return}
+                else if(page==='home'){
+                   
+                    document.getElementById('mainContent').innerHTML=home;
+
+                }
+                else if(page==='admin')
+                {
+                       // document.getElementById('mainNav').innerHTML =adminNavbar;
+                        document.getElementById('mainContent').innerHTML=admin;
+
+                }
+
+
+            }
+
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,21 @@
+<div class="header">
+  <p class="title">Indo-Athletic Society</p>
+  <input type="text" class="topNavSerach" placeholder="Search..">
+</div>
+<input type="checkbox" id="openSidebarMenu">
+<label for="openSidebarMenu" class="sidebarIconToggle">
+  <div class="spinner top"></div>
+  <div class="spinner middle"></div>
+  <div class="spinner bottom"></div>
+</label>
+<div id="sidebarMenu">
+    <ul class="menu">
+        <li><a routerLink="/home" routerLinkActive="router-link-active" >Home</a></li>
+        <li><a href="#">User</a></li>
+        <li><a routerLink="/about" routerLinkActive="router-link-active" >About Us</a></li>
+    </ul>
+</div>
+<div class="main">
+  <router-outlet></router-outlet>
+    
+</div>

@@ -1,0 +1,15 @@
+thead, tbody, tfoot, tr, td, th {
+    width: 151px;
+    color: #03115d;
+}
+
+@media screen and (max-width: 960px) {
+    .table{
+        width: 100px;
+    }
+    thead, tbody, tfoot, tr, td, th {
+        width: 151px;
+        padding: 0;  
+    }
+  }
+  

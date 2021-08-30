@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stud regi form</title>
+  <style>
+    .main-container{
+      height: auto;
+      width: 50%;
+      background-color: lightgray;
+      margin-left:300px ;
+      margin-top: 100px;
+    }
+    .sub-content{
+      width: 70%;
+      margin-left: 200px;
+    }
+    input[type=text],[type=number]{
+      width: 40%;
+    }
+    input[type=number]{
+      margin-left: 40px;
+    }
+    #add{
+      margin-left: 13px;
+    }
+    .btn{
+      border-radius: 50px;
+      margin-left: 100px;
+      background-color: rgba(185, 71, 4, 0.884);
+      height: 40px;
+      width: 100px;
+      font-size: large;
+      margin-bottom: 30px;
+    }
+    .btn:hover{
+      box-shadow: 1px 1px 2px 2px white;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <h1 style="color: rgb(2, 2, 109); margin-left: 240px;">Registration Form</h1>
+    <div class="sub-content">
+      <form action="#" onsubmit="checkInfo()">
+      First Name : <input type="text"  id="fname" placeholder="Enter First Name"><br><br>
+      Last Name : <input type="text"  id="lname" placeholder="Enter Last Name"><br><br>
+      Age : <input type="number" id="age" placeholder="Enter Age"><br><br>
+     Address : <input type="text"  id="add" placeholder="Enter Address"><br><br>
+     Select Gender <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                    <br><br>
+     Email : <input type="text"  id="email" placeholder="Enter g-mail"><br><br>  
+     <hr>
+     <button class="btn">Submit</button>            
+      </form>
+    </div>
+  </div>
+</body>
+<script>
+  function checkInfo(){
+    var fname=document.getElementById("fname").value;
+    var lname=document.getElementById("lname").value
+    var age=document.getElementById("age").value;
+
+    if(fname=="")
+    {
+      alert("Please Enter First Name");
+    }
+    if(lname=="")
+    {
+      alert("Please Enter Last Name");
+    }
+    else{
+      var regExpr=/^[a-zA-Z\s]+$/;      //+$ ya adhich expersion at least 1da tari chech jhal pahije
+      if(regExpr.test(fname)==false || regExpr.test(lname)==false)
+      {
+        alert("Please Enter Only Alphabets")
+      }
+    }
+
+    if(age==""){
+      alert("Please Enter Your Age")
+    }
+    else
+    if(!(age>18 && age<50)){
+      alert("Please Enter Age in between 18 to 50")
+      return false;
+    }
+    else{
+      document.write("Registration Sucessfull...!")
+    }
+}
+</script>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+     
+        .Main-container{
+            height: auto;
+            width: 50%;
+            margin-left: 200px;
+            background-color: lightgray;
+            color: black;
+        }
+        form{
+          width: 100%;
+        }
+        .sub-container{
+          width: 70%;
+            margin-left: 160px;
+            
+        }
+        span{
+          margin-left: 40px;
+        }
+        .spn-age,.spn-city{
+          margin-left: 80px;
+        }
+        .spn-addr,.spn-city,.spn-pin{
+          margin-left: 50px;
+        }
+        .spn-city,.spn-state{
+          margin-left: 75px;
+        }
+       .spn-nat{
+         margin-left: 30px;
+       }
+       .spn-mob,.spn-dob{
+         margin-left: 20px;
+       }
+       .inp-RB{
+         width: auto;
+       }
+       input{
+        width: 40%;
+      }
+        .spn-btn{
+          margin-left: 80px;
+        }
+    </style>
+</head>
+  <body>
+      <div class="Main-container">
+          <div class="sub-container">
+                <h1 style="color: rgb(12, 4, 124);">Registration Form</h1>
+                <h3>Personal Details</h3>
+                <form onsubmit="validateHTMlform()">
+                First Name: <span><input type= "text" id="fname" placeholder= "First Name"></span>
+                <br><br>
+                Last Name : <span><input type= "text" id="lname" placeholder= "last name"></span>
+                <br>
+                <br>
+                Age : <span class="spn-age"><input type="number" id="age" placeholder="Enter your Age"></span>
+                <br>
+                <br>
+                Address : <span class="spn-addr"> <input type= "text"></span>
+                <br><br>
+                City : <span class="spn-city"><input type= "text"></span>
+                <br><br>
+                State :<span class="spn-state"><input type= "text"></span>
+                <br><br>
+                Select Gender : <input class="inp-RB" type="radio" name= "gender">Male 
+                <input class="inp-RB" type = "radio" name="gender">Female 
+                <br><br>
+                
+                Date of Birth : <span class="spn-dob"><input type= "date"> </span>
+                <br><br>
+                
+                Mobile Num : <span class="spn-mob"><input type = "text"></span>
+                <br><br>
+                
+                Email Id : <span><input type= "text" placeholder = "enter your email id"> </span>
+                <br><br>
+                <hr>
+               <span class="spn-btn"><button type= "reset" value= "reset">Reset</button>
+                <button type= "Submit" value = "submit"> Submit</button></span>
+                </form>
+    </div>
+</div>
+</body>
+<script>
+    function validateHTMlform(){
+      var fname=document.getElementById("fname").value;
+      var lname=document.getElementById("lname").value;
+      var age=document.getElementById("age").value;
+
+      if(fname=="")
+      {
+        alert("Please enter your firstName");
+      }
+      if(lname=="")
+      {
+        alert("Please enter your lasttName");
+      }
+      else{
+        var regexp=/^[a-zA-Z\s]+$/;
+          if(regexp.test(fname)==false || regexp.test(lname)==false)
+          {
+            alert("Please Enter Valid Information:Only use Alphabets");
+          }
+      }
+      if(age=="")
+      {
+        alert("Please enter your Age");
+      }
+      else{
+            if(!(age>18 && age<50))
+            {
+              alert("The age must be in between 18 to 50");
+              return false ;
+            }
+        }
+    }
+</script>
+</html> -->

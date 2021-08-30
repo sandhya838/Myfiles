@@ -1,0 +1,152 @@
+<div class="form-container">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+        Name:&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="User Name" placeholder="Full Name"><br><br>
+        Address: <input type="text" name="Address" placeholder=""><br><br>
+        Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" name="Age"><br><br>
+        Email:&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="Email Addr" placeholder="something@gmail.com"><br><br>
+        <button type="submit" id="btn">Submit</button>
+    </form>
+    </div>
+
+<br><br>
+<div class="row">
+    <!-- == sidebar== -->
+    <div class="col1"> 
+        <app-side></app-side>
+        <h1>Global Diclaration
+        </h1>
+        <div class="output">
+            <ul>
+                <li *ngFor="let stud of students">{{stud.fName}} {{stud.lName}} 
+                    <ul>
+                        <li>Marathi: {{stud.marks.Marathi}}</li>
+                        <li>Hindi: {{stud.marks.Hindi}}</li>
+                        <li>Sanskrut: {{stud.marks.Sanskrut}}</li>
+                        <li>English: {{stud.marks.English}}</li>
+                        <li>SocialScience: {{stud.marks.SocialScience}}</li>
+                    </ul>
+                    <ul>
+                       <li *ngFor="let sub of stud.Subjects"> {{sub}}</li>
+                    </ul>
+                    </li>
+            </ul>
+            <p *ngIf="students.length===0">No Student Information Available..!!</p>
+        </div>
+    </div>
+
+    <!-- ====Main ===== -->
+    <div class="col2">
+       <app-main></app-main>
+      <!-- <h3>All Subject marks</h3>
+      <ul>
+        <li *ngFor="let stud of students">Marathi: {{stud.marks.Marathi}}</li>
+                   
+      </ul> -->
+    </div>
+
+    <!-- ==aside= -->
+    <div class="col3">
+        <app-aside></app-aside>
+        <table>
+            <tbody>
+                <th>Student Information</th>
+               <tr>
+                   <th>Student Name</th>
+                   <th>Subject</th>&nbsp;&nbsp;&nbsp;
+                   <th>Marks</th>
+               </tr>
+               <tr>
+                   <td>{{students[2].fName}} {{students[2].lName}}</td>
+                   <td>{{students[2].Subjects[0]}}</td>&nbsp;&nbsp;&nbsp;
+                   <td>{{students[2].marks.Marathi}}</td>
+               </tr>
+               <tr>
+                <td></td>
+                <td>{{students[2].Subjects[1]}}</td>&nbsp;&nbsp;&nbsp;
+                <td>{{students[2].marks.Hindi}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>{{students[2].Subjects[2]}}</td>&nbsp;&nbsp;&nbsp;
+                <td>{{students[2].marks.Sanskrut}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>{{students[2].Subjects[3]}}</td>&nbsp;&nbsp;&nbsp;
+                <td>{{students[2].marks.English}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>{{students[2].Subjects[4]}}</td>&nbsp;&nbsp;&nbsp;
+                <td>{{students[2].marks.SocialScience}}</td>
+            </tr> <br>
+            <tr>
+                <td>{{students[1].fName}} {{students[1].lName}}</td>
+                <td>{{students[1].Subjects[0]}}</td>&nbsp;&nbsp;&nbsp;
+                <td>{{students[1].marks.Marathi}}</td>
+            </tr>
+            <tr>
+             <td></td>
+             <td>{{students[1].Subjects[1]}}</td>&nbsp;&nbsp;&nbsp;
+             <td>{{students[1].marks.Hindi}}</td>
+         </tr>
+         <tr>
+             <td></td>
+             <td>{{students[1].Subjects[2]}}</td>&nbsp;&nbsp;&nbsp;
+             <td>{{students[1].marks.Sanskrut}}</td>
+         </tr>
+         <tr>
+             <td></td>
+             <td>{{students[1].Subjects[3]}}</td>&nbsp;&nbsp;&nbsp;
+             <td>{{students[1].marks.English}}</td>
+         </tr>
+         <tr>
+             <td></td>
+             <td>{{students[1].Subjects[4]}}</td>&nbsp;&nbsp;&nbsp;
+             <td>{{students[1].marks.SocialScience}}</td>
+         </tr> <br>
+         <tr>
+            <td>{{students[0].fName}} {{students[0].lName}}</td>
+            <td>{{students[0].Subjects[0]}}</td>&nbsp;&nbsp;&nbsp;
+            <td>{{students[0].marks.Marathi}}</td>
+        </tr>
+        <tr>
+         <td></td>
+         <td>{{students[0].Subjects[1]}}</td>&nbsp;&nbsp;&nbsp;
+         <td>{{students[0].marks.Hindi}}</td>
+     </tr>
+     <tr>
+         <td></td>
+         <td>{{students[0].Subjects[2]}}</td>&nbsp;&nbsp;&nbsp;
+         <td>{{students[0].marks.Sanskrut}}</td>
+     </tr>
+     <tr>
+         <td></td>
+         <td>{{students[0].Subjects[3]}}</td>&nbsp;&nbsp;&nbsp;
+         <td>{{students[0].marks.English}}</td>
+     </tr>
+     <tr>
+         <td></td>
+         <td>{{students[0].Subjects[4]}}</td>&nbsp;&nbsp;&nbsp;
+         <td>{{students[0].marks.SocialScience}}</td>
+     </tr> <br>
+
+               
+            </tbody>
+        </table>
+        <!-- <div class="output-2">
+            <ul>
+                <li>{{students[2].fName}} {{students[2].lName}} 
+                    <ul>
+                        <li>Marathi: {{students[2].marks.Marathi}}</li>
+                        <li>Hindi: {{students[2].marks.Hindi}}</li>
+                        <li>Sanskrut: {{students[2].marks.Sanskrut}}</li>
+                        <li>English: {{students[2].marks.English}}</li>
+                        <li>SocialScience: {{students[2].marks.SocialScience}}</li>
+                    </ul>
+                </li>
+
+            </ul>
+</div> -->
+    </div>
+</div>
