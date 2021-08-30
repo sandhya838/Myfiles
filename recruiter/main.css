@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,300&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  /* line-height: 1.1; */
+  /* padding: 3rem; */
+  position: relative;
+}
+.navbar{
+    height: 56px;
+    width: 89%;
+    margin-left: 181px;
+    background-color:#99fa ;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+.iconic-list{
+    margin-left: 1200px;
+}
+/* .fa-bell{
+    height: 30px;
+} */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 13rem;
+  height:41rem;
+  /* border-radius: 1em; */
+  background: #99fa;
+  transition: all 500ms ease;
+  overflow: hidden;
+  margin-left: -1353px;
+  position: absolute;
+  /* margin-top: 40px; */
+}
+
+.sidebar.active {
+  flex: 0 4rem;
+  height: 41rem;
+}
+
+.hamburger {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-inline:min(77%, 30rem);
+
+  transform: translatex(-50%);
+  position: relative;
+
+  cursor: pointer;
+  background: linear-gradient(
+    #0007 15%,
+    0%,
+    #0000 30%,
+    0%,
+    #0007 45%,
+    0%,
+    #0000 60%,
+    0%,
+    #0007 75%,
+    0%,
+    #0000
+  );
+}
+
+.user {
+  opacity: 1;
+  border-bottom: 1px solid #0002;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  transition: opacity 270ms ease-in-out;
+}
+
+.user.fade {
+  z-index: -1;
+  inset: 0;
+  position: absolute;
+  opacity: 0;
+  transition: 0ms ease-in-out;
+}
+.user i {
+    position: relative;
+display: flex;
+width: 5.5rem;
+aspect-ratio: 1;
+align-items: center;
+justify-content: center;
+font-size: 3rem;
+background-color: #ffffff90;
+border-radius: 50%;
+margin-bottom: 0.75rem;
+color: #999fff;
+/* margin-left: 40px; */
+
+}
+
+.userName {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #333;
+  text-transform: uppercase;
+  line-height: 1.5;
+  /* margin-left: 36px; */
+}
+.userText {
+  font-style: italic;
+  color: #666;
+  font-size: 1.15rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  /* margin-left: 49px; */
+}
+
+.navigation {
+  width: 100%;
+  position: relative;
+}
+
+.nav-list {
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  border-radius: 0.35em;
+  background: #ffffff60;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 2em;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #222;
+}
+
+a:hover {
+  background: #0001;
+}
+
+.fab {
+  align-items: center;
+  margin-left: 0.5rem;
+  display: inline-flex;
+  font-size: 2rem;
+  color: hsl(243, 80%, 40%);
+  -webkit-text-stroke: thin #99fa;
+}
+.footer{
+    margin: auto;
+    margin-left: 75px;
+    font-size: 13px;
+}
+.mainbody{
+    /* background-color: orange; */
+    width: 89%;
+    margin-left: 175px;
+    margin-top: 56px;
+}
